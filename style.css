@@ -1,11 +1,14 @@
 body{
     font-family: 'Open Sans', sans-serif;
+    --animate_duration: 15s;
 }
 
 #intro{
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
+
 }
 
 #intro h1{
@@ -13,10 +16,12 @@ body{
     margin-top: 45px;
 }
 
+
 #intro .cat{
-    max-height: 20%;
-    max-width: 10%;
+    height: auto;
+    max-width: 5%;
     margin: 40px 10px 0px 0px;
+    --animate_duration: 15s;
 }
 
 #start{
@@ -43,8 +48,17 @@ body{
     margin: 10px 0px 10px 0px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .fa-facebook{
     color: #4267B2;
+    transition: transform .2s;
+}
+.fa-facebook:hover{
+    transform: scale(1.5);
 }
 
 .fa-instagram{
@@ -52,15 +66,29 @@ body{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: transform .2s;
+}
+.fa-instagram:hover{
+    transform: scale(1.5);
 }
 
 .fa-twitter{
     color: #1DA1F2;
+    transition: transform .2s;
+}
+
+.fa-twitter:hover{
+    transform: scale(1.5);
 }
 
 
 .fa-github{
     color: #171515;
+    transition: transform .2s;
+}
+
+.fa-github:hover{
+    transform: scale(1.5);
 }
 
 .button{
