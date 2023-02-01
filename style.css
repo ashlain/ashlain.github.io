@@ -12,6 +12,7 @@ body{
 }
 
 #intro h1{
+    animation: color-change 1s infinite;
     font-style: bold;
     margin-top: 45px;
 }
@@ -19,7 +20,7 @@ body{
 
 #intro .cat{
     height: auto;
-    max-width: 5%;
+    max-width: 100%;
     margin: 40px 10px 0px 0px;
     --animate_duration: 15s;
 }
@@ -102,3 +103,9 @@ a{
     flex-direction: row;
     justify-content: center;
 }
+
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+  }
